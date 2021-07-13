@@ -1,4 +1,5 @@
-const API_BASE_URL = 'https://api.pietrzakadrian.com/bank';
+// eslint-disable-next-line prefer-destructuring
+const API_BASE_URL = process.env.API_BASE_URL;
 const AUTH = 'Auth';
 const USERS = 'Users';
 const CURRENCIES = 'Currencies';
