@@ -7,6 +7,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = require('./webpack.base.babel')({
   mode: 'development',
@@ -32,6 +33,7 @@ module.exports = require('./webpack.base.babel')({
 
   // Add development plugins
   plugins: [
+    new Dotenv(),
     new ErrorOverlayPlugin(),
     new webpack.HotModuleReplacementPlugin(), // Tell webpack we want hot reloading
     new HtmlWebpackPlugin({
