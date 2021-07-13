@@ -12,3 +12,5 @@ npm-debug.log
 .editorconfig
 .prettierignore
 .nginx.conf
+
+.env
