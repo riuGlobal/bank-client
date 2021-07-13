@@ -33,11 +33,11 @@ function AmountMoney({ intl, onValidateFields }) {
       );
     }
 
-    if (value && value > Number(senderBill.amountMoney)) {
-      return Promise.reject(
-        new Error(intl.formatMessage(messages.valueValidation)),
-      );
-    }
+    // if (value && value > Number(senderBill.amountMoney)) {
+    //   return Promise.reject(
+    //     new Error(intl.formatMessage(messages.valueValidation)),
+    //   );
+    // }
 
     if (value === 0 || value < 0) {
       return Promise.reject(
